@@ -21,6 +21,8 @@ function onLogin(event: React.FormEvent<HTMLFormElement>) {
   };
   const username = target.username.value;
   const password = target.password.value;
+
+  return { username, password };
 }
 
 const router = createBrowserRouter(
@@ -28,7 +30,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<Layout />}>
       <Route index path="/auth" element={<Auth />} />
       <Route path="/player1" element={<Player1 />} />
-      <Route path="/player2" element={<Player2 />} />
+      <Route path="/player2" element={<Player2 onLogin={onLogin} />} />
       <Route path="/game" element={<Game />} />
     </Route>
   )
