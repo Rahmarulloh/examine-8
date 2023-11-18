@@ -62,7 +62,7 @@ export default function Player2({
             </svg>
           </span>
         </div>
-        <NavLink to="/player2">
+        <NavLink to="/game">
           <button className="submit" type="submit">
             Start the Game
           </button>

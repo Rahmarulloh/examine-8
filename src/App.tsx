@@ -11,6 +11,7 @@ import Auth from "./pages/authentication";
 import Game from "./pages/game";
 import Player1 from "./components/player1";
 import Player2 from "./components/player2";
+import Home from "./pages/home";
 
 function onLogin(event: React.FormEvent<HTMLFormElement>) {
   event.preventDefault();
@@ -28,7 +29,8 @@ function onLogin(event: React.FormEvent<HTMLFormElement>) {
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-      <Route index path="/auth" element={<Auth />} />
+      <Route index element={<Home />} />
+      <Route path="/auth" element={<Auth />} />
       <Route path="/player1" element={<Player1 />} />
       <Route path="/player2" element={<Player2 onLogin={onLogin} />} />
       <Route path="/game" element={<Game />} />

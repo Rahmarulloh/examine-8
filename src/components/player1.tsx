@@ -12,8 +12,8 @@ export default function Player1({
         <p className="form-title">Register 1st Player</p>
         <div className="input-container">
           <input
-            placeholder="Enter email"
-            type="email"
+            placeholder="Enter username"
+            type="username"
             onChange={onChangeName}
           />
           <span>

@@ -17,6 +17,13 @@ export default function Layout() {
       <main>
         <Outlet />
       </main>
+
+      <footer className="footer">
+        <p className="footer-text">Copyright &copy; 2023</p>
+        <p className="footer-text">All Rights Reserved</p>
+        <p className="footer-text">Developed by: Uzgur</p>
+        <p className="footer-text">Version: 1.0.0</p>
+      </footer>
     </div>
   );
 }
