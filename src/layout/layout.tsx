@@ -5,8 +5,12 @@ export default function Layout() {
     <div>
       <header>
         <nav>
-          <h1>Tic Tac Toe</h1>
-          <NavLink to="/auth">Register Players </NavLink>
+          <NavLink to="/" className="nav-logo">
+            <h1>Tic Tac Toe</h1>
+          </NavLink>
+          <NavLink to="/auth" className="nav-auth-btn">
+            Register Players{" "}
+          </NavLink>
         </nav>
       </header>
       <br />
